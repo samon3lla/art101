@@ -4,3 +4,13 @@
   margin: 10px;
   max-width: 500px;
 }
+.me-photo {
+  margin: 10px;
+  max-width: 500px;
+}
+#content {
+  background-color: rgb(210, 10, 147);
+  font-family: sans-serif;
+  background-color: rgb(196, 16, 160);
+  border: solid 2px purple;
+}
