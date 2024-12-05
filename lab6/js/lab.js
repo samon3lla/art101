@@ -1,6 +1,5 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 6: Arrays and Objects 
+// Author: Sam Fonseca-Vallejo
 
 // Constants
 
@@ -19,3 +18,33 @@ function main() {
 
 // let's get this party started
 main();
+
+
+// Define Variables 
+let myTransport = [
+  "Car"
+  "Walking"
+  "Bus"
+  "Bike"
+];
+
+
+// Object for main ride 
+let myMainRide = {
+  make: "Volkswagen",
+  model: "Jetta",
+  year: "2017",
+  color: "black",
+  age: function () {
+    return 2024 - this.year;
+  }
+};
+
+
+//Output 
+document.writeln("Transportation Methods: " + myTransport + "<br>");
+
+//Output 
+document.writeln("My Main Ride: <pre>", 
+    JSON.stringify(myMainRide, null, '\t'), "<,/pre>");
+
