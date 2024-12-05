@@ -1,21 +1,22 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// lab.js - Use Variables and Data Types in JavaScript
+// Author: Sam Fonseca-Vallejo
+// Date: 10/21/24
 
-// Constants
+// Define variables 
+  let make = "Volkswagen";
+  let model = "Jetta";
+  let year = 2017;
+  let color = "Black";
+  let ownIt = true;
 
-// Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Calculate age
+  let age = 2024 - year; 
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Output
+  document.writeln("Make: " + make + "<br");
+  document.writeln("Model: " + model + "<br>");
+  document.writeln("Year: " + year + "<br>");
+  document.writeln("Color " + color + "<br>");
+  document.writeln("Age: " + age + "<br>"); 
+  
