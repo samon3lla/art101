@@ -20,7 +20,7 @@ function generateRandomText() {
   $("#make-convo").click(function() {
     const newText = generateRandomText();
     // append a new div with the generated text to the output div
-    $("#output").append('<div class=text><p>' + newText + '</p></div>');
+    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
   })
   
 
