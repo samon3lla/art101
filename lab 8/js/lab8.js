@@ -36,4 +36,15 @@ var result = array.map(function(x){
 // should return []
 console.log("Squareroot of array:", results); 
 
+function defaultName() {
 
+}
+
+function main() {
+  console.log("Main function started.");
+
+  // the code that makes everything happen
+}
+
+// let's get this party started
+main();
