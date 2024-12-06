@@ -10,35 +10,28 @@ function is Even(x){
     return (x % 2 == 0);
 }
 
-// test function 
-console.log("isEven(3):", isEven(3)); // false
-console.log("isEven(6):", isEven(6)); // true
-console.log("isEven(89):", isEven(89)); // false
-console.log("isEven(76):", isEven(76)); // true
-console.log("isEven(42):", isEven(42)); // true
-
-let array = [3, 6 ,89 ,76 ,42]
+// Array definition and assignment
+let array = [3, 6, 89, 76, 42];
 console.log("Array: ", array);
-
+document.writeln("Array: " + array + "<br>");
+// Messy function to square elements of array
 function messy(x) {
-    var results = x * x;
-    return results;
+  var results = x * x;
+  return results;
 }
 
-var result = array.map(isEven);
-// should return [false, true, false, true, true]
-console.log("Test of evenness of array:", result);
+// .map applies Messy function to elements of array
+let mapResults = array.map(messy);
+console.log("Array Elements Squared: ", mapResults);
+document.writeln("Array Elements Squared: " + mapResults + "<br>");
 
-var result = array.map(function(x){
-    return x ** 0.5;
+// Variable evenEven holds the values of array.map(anonfunction)
+let evenEven = array.map(function (x) {
+  return (x % 2 == 0);
 })
+console.log("Anon Function i.e. Even Verification: ", evenEven);
+document.writeln("Results: " + evenEven);
 
-// should return []
-console.log("Squareroot of array:", results); 
-
-function defaultName() {
-
-}
 
 function main() {
   console.log("Main function started.");
